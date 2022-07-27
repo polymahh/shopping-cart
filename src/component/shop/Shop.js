@@ -1,10 +1,12 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import Item from "../item/Item"
-import { cartArray } from "../../arrayContext"
+import { cartArray, visibleArray } from "../../arrayContext"
+import CartItem from "../cartitem/CartItem"
 
 const Shop = ()=>{
 
 const {cartArr,setCartArr} = useContext(cartArray)
+const {visibleArr} = useContext(visibleArray)
 
 const shopArray=[
     {
@@ -25,21 +27,40 @@ const shopArray=[
     },
 ]
 
-// const [cartArray,setCartArray] = useState([])
+const themeStyle = {
+        position: 'fixed',
+        backgroundColor: '#bd4242',
+        width: '40%',
+        height: '100%',
+        right: '0%',
+        top: '0',
+        marginTop: '56px',
+        display: visibleArr ? 'block' : 'none' 
+    
+}
 
-// const addToCart = (val)=>{
-//     setCartArray([...cartArray,val])
-//     console.log(cartArray)
-// }
-
+useEffect(()=>{
+    console.log(cartArr)
+},[cartArr])
 const addToCart = (val)=>{
     setCartArr([...cartArr,val])
     console.log(cartArr)
 }
-return (
+
+const removeFromCart = (item)=>{
+    let index = cartArr.indexOf(item)
+    console.log(index)
+    setCartArr(cartArr.splice(index,1))
+}
+return (<>
     <div className="shop">
         {shopArray.map((item,index)=><Item key={index} addToCart={addToCart} item={item}/>)}
     </div>
+    <div className="cartPage" style={themeStyle}>
+        {cartArr.map((item,index)=><CartItem key={index} removeFromCart={removeFromCart} item={item}/>)}
+        
+    </div>
+    </>
     )
 }
 
