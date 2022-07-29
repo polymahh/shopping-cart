@@ -1,15 +1,16 @@
-import { useContext, useEffect } from 'react'
+import {  useEffect } from 'react'
 import {Link} from 'react-router-dom'
-import { cartArray, visibleArray } from '../../arrayContext'
+import { useArrayContext, useVisibleContext } from '../../arrayContext'
 
 const Header = ()=>{
-    const {cartArr} = useContext(cartArray)
-    const {visibleArr,setVisibleArr} = useContext(visibleArray)
+    
+    const {cartArr} = useArrayContext()
+    const {visibleArr,visibleUp} = useVisibleContext()
 
     
 
     const visibleTogle = ()=> {
-        setVisibleArr(!visibleArr)
+        visibleUp()
     }
 
     useEffect(()=>{
@@ -32,9 +33,7 @@ return (
                 <Link to='/shop'>
                 <li>Shop</li>
                 </Link>
-                
                 <li className='cart'>Cart {cartArr.length}</li>
-                
                 
             </ul>
         </nav>
