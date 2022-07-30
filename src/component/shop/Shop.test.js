@@ -54,6 +54,6 @@ test('test button to add to cartArr',()=>{
     const btn = screen.getAllByRole("button")
     fireEvent.click(btn[0])
     const val = screen.getByTestId('val')
-    expect(val).toBeInTheDocument
+    expect(val).toHaveTextContent(1)
 
 })

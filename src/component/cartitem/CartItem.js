@@ -6,7 +6,7 @@ const CartItem = ({removeFromCart,index,item,quantityHandler})=>{
         setVal(e.target.value)
         
     }
-return <div className="cartItem" >
+return <div className="cartItem"  >
             <div className="small-image">
                 <img src="http://mistillas.cl/wp-content/uploads/2018/04/Nike-Epic-React-Flyknit-%E2%80%9CPearl-Pink%E2%80%9D-01.jpg" />
             </div>
@@ -21,7 +21,7 @@ return <div className="cartItem" >
                 </div>
             </div>
             <div className="item-button">
-                <button onClick={()=> removeFromCart(index)}className="remove">X</button>
+                <button onClick={()=> removeFromCart(index)} className="remove" data-testid="deleteItem">X</button>
             </div>
         </div>
     

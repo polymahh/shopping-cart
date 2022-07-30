@@ -12,11 +12,10 @@ const RouteSwitch =() => {
     return(
         <BrowserRouter>
         <ArrayProvider>
-            <Header/>
+                <Header/>
             <Routes>
                 <Route path="/" element={<App/>}/>
                 <Route path="/shop" element={<Shop/>}/>
-                
             </Routes>
         </ArrayProvider>
         </BrowserRouter>
