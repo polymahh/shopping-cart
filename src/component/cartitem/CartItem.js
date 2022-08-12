@@ -8,12 +8,12 @@ const CartItem = ({removeFromCart,index,item,quantityHandler})=>{
     }
 return <div className="cartItem"  >
             <div className="small-image">
-                <img src="http://mistillas.cl/wp-content/uploads/2018/04/Nike-Epic-React-Flyknit-%E2%80%9CPearl-Pink%E2%80%9D-01.jpg" />
+                <img src={require( `../assets/${item.image}`)} />
             </div>
             <div className="item-info">
-                <p>Women's Running Shoe</p>
-                <h1>Nike Epic React Flyknit</h1>
-                <h2>$150</h2>
+            <p>{item.category}</p>
+            <h1>{item.name}</h1>
+            <h2>{item.price}</h2>
                 <hr></hr>
                 <div className="input">
                 <label htmlFor="quantity">Quantity: </label>

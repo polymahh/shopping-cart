@@ -11,24 +11,44 @@ const {cartArr,cartArrUp} = useArrayContext()
 
 const shopArray=[
     {
-    name:'item1',
-    price:'101$',
-    quantity:1
+        category:'Babies',
+        image:'spoon_bottle.jpg',
+        name:'Spoon Bottle',
+        price:'15$',
+        description:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+        quantity:1
     },
     {
-    name:'item2',
-    price:'102$',
-    quantity:1
+        category:'Outdoors',
+        image:'stroller.jpg',
+        name:'Baby Stroller',
+        price:'204$',
+        description:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+        quantity:1
     },
     {
-    name:'item3',
-    price:'103$',
-    quantity:1
+        category:'Outdoors',
+        image:'kids_tricycle.jpg',
+        name:'Kids Tricycle',
+        price:'99.99$',
+        description:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+        quantity:1
     },
     {
-    name:'item4',
-    price:'104$',
-    quantity:1
+        category:'Summer Toys',
+        image:'Floaty_Car.jpg',
+        name:'Floaty Car',
+        price:'25$',
+        description:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+        quantity:1
+    },
+    {
+        category:'Outdoors',
+        image:'Foldable_Bag.webp',
+        name:'Foldable Bag',
+        price:'35$',
+        description:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
+        quantity:1
     },
 ]
 
@@ -51,9 +71,13 @@ const addToCart = (val)=>{
 }
 
 
-return (<>
+return (
+<>
+    <div className="contain">
+
     <div className="shop" data-testid="shop">
         {shopArray.map((item,index)=><Item key={index} addToCart={addToCart} item={item}/>)}
+    </div>
     </div>
 
     

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { useArrayContext, useVisibleContext } from '../../arrayContext'
 import CartItem from "../cartitem/CartItem"
 import uniqid from "uniqid"
+import { findByLabelText } from '@testing-library/react'
 
 
 
@@ -32,7 +33,7 @@ const Header = ()=>{
         width : '100%',
         height : '100%',
         top:'0',
-        display: visibleArr ? 'block' : 'none',
+        display: visibleArr ? 'flex' : 'none',
         zIndex: '95'
     
 }
@@ -54,7 +55,7 @@ const removeFromCart = (index)=>{
 return (
     <>
     <div className="header">
-        <h1>ShopyShop</h1>
+        <img src={require('../assets/lilmomy2.png')} alt='lilMomy'/>
         <nav>
             <ul>
                 <Link to='/'>
@@ -69,7 +70,8 @@ return (
         </nav>
     </div>
     
-    <div data-testid='cart' style={themeStyle}>
+    <div data-testid='cart' style={themeStyle} >
+        <div style={{ flex: '1'}} onClick={()=> visibleTogle()}></div>
         <div className="cartPage">
             <h1 >Cart:</h1>
             {cartArr.map((item,index)=><CartItem key={uniqid()} index={index} quantityHandler={quantityHandler} removeFromCart={removeFromCart} item={item}/>)}

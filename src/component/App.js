@@ -7,10 +7,21 @@ function App() {
 
   return (
     <div className="App">
-      <h1>All You Need Shopping !!</h1>
+    
+      <div className='welcome'>
+        <h1>BEST TIMES!</h1>
+        <h1>FOR EVERY NEW!</h1>
+        <h1>MOOM!</h1>
+
       <Link to="/shop">
-      <h2>Shop Now</h2>
+      <h2 className='now'>Shop Now</h2>
       </Link>
+      </div>
+
+      <div className='kid'>
+        <img src={require('./assets/valeria-zoncoll-AVGc87j_vNA-unsplash.jpg')} alt='kid'/>
+      </div>
+      
     </div>
   );
 }
