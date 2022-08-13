@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.9ab9dda9.css",
+    "main.js": "/shopping-cart/static/js/main.e819c181.js",
+    "static/media/valeria-zoncoll-AVGc87j_vNA-unsplash.jpg": "/shopping-cart/static/media/valeria-zoncoll-AVGc87j_vNA-unsplash.83689410f3acbe3106d7.jpg",
+    "static/media/Floaty_Car.jpg": "/shopping-cart/static/media/Floaty_Car.37368b2e6f3873495e91.jpg",
+    "static/media/Foldable_Bag.webp": "/shopping-cart/static/media/Foldable_Bag.f73f22e6d63e8ea7cabd.webp",
+    "static/media/HC.jpg": "/shopping-cart/static/media/Hc907c2384c50470eb3f2f0b8122a7418C.88d29473a6d7862aea0e.jpg",
+    "static/media/lilmomy2.png": "/shopping-cart/static/media/lilmomy2.74eebb6ee7510367c157.png",
+    "static/media/s-l640.jpg": "/shopping-cart/static/media/s-l640.baeb3e8b02903bf36a0c.jpg",
+    "static/media/kids_tricycle.jpg": "/shopping-cart/static/media/kids_tricycle.2b67590674245075a09d.jpg",
+    "static/media/spoon_bottle.jpg": "/shopping-cart/static/media/spoon_bottle.1a9e5bb0d1b1d5064d67.jpg",
+    "static/media/stroller.jpg": "/shopping-cart/static/media/stroller.5b2cb724fbf84c533c60.jpg",
+    "static/media/wave-haikei_4.svg": "/shopping-cart/static/media/wave-haikei_4.8e44b0d160b439b1350e.svg",
+    "static/media/wave-haikei_3.svg": "/shopping-cart/static/media/wave-haikei_3.5ae9cd2539ecb25015e6.svg",
+    "index.html": "/shopping-cart/index.html",
+    "main.9ab9dda9.css.map": "/shopping-cart/static/css/main.9ab9dda9.css.map",
+    "main.e819c181.js.map": "/shopping-cart/static/js/main.e819c181.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ab9dda9.css",
+    "static/js/main.e819c181.js"
+  ]
+}
