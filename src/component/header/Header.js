@@ -58,10 +58,10 @@ return (
         <img src={require('../assets/lilmomy2.png')} alt='lilMomy'/>
         <nav>
             <ul>
-                <Link to='/'>
+                <Link to='/shopping-cart'>
                 <li data-testid ='nav'>Home</li>
                 </Link>
-                <Link to='/shop'>
+                <Link to='/shopping-cart/shop'>
                 <li data-testid ='nav'>Shop</li>
                 </Link>
                 <li data-testid ='nav' className='cart'>Cart {cartArr.length}</li>

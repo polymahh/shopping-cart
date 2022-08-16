@@ -13,7 +13,7 @@ function App() {
         <h1>FOR EVERY NEW!</h1>
         <h1>MOOM!</h1>
 
-      <Link to="/shop">
+      <Link to="/shopping-cart/shop">
       <h2 className='now'>Shop Now</h2>
       </Link>
       </div>

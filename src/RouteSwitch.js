@@ -14,8 +14,8 @@ const RouteSwitch =() => {
         <ArrayProvider>
                 <Header/>
             <Routes>
-                <Route path="/" element={<App/>}/>
-                <Route path="/shop" element={<Shop/>}/>
+                <Route path="/shopping-cart" element={<App/>}/>
+                <Route path="/shopping-cart/shop" element={<Shop/>}/>
             </Routes>
         </ArrayProvider>
         </BrowserRouter>
